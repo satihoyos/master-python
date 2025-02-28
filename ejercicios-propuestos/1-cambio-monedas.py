@@ -17,7 +17,8 @@ def cambio(dinero):
     keys = list(cambio_monedas)
     response = ""
     for i in keys:
-        response = response + 'Monedas de ' + i + ": " + str(cambio_monedas[i]) + ", "
+        msg = "Monedas de {0}: {1}, ".format(i, str(cambio_monedas[i]))
+        response = response + ' ' + msg
     return response
 
 
